@@ -12,13 +12,15 @@
 
     </head>
     <body>
-<hr> 
-<p>
-Degra V - Damian Rutkowski, Krystian Kołota, Marcin Kuźma, Rafał Kościuczyk, Konrad Gardocki -
-</p>
+        <div class="container-fluid">
+            <hr> 
+            <p>
+                Degra V - Damian Rutkowski, Krystian Kołota, Marcin Kuźma, Rafał Kościuczyk, Konrad Gardocki -
+            </p>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="config/js/bootstrap.min.js"></script>
-		<script src="config/js/scripts.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+            <script src="config/js/bootstrap.min.js"></script>
+            <script src="config/js/scripts.js"></script>
+        </div>
     </body>
 </html>

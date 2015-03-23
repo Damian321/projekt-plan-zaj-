@@ -26,21 +26,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/" class="navbar-brand">Bootply</a>
+                    <a href="/" class="navbar-brand">Degra V2</a>
                 </div>
                 <nav class="collapse navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#">Get Started</a>
+                            <a href="#">1</a>
                         </li>
                         <li>
-                            <a href="#">Edit</a>
+                            <a href="#">2</a>
                         </li>
                         <li>
-                            <a href="#">Visualize</a>
+                            <a href="#">3</a>
                         </li>
                         <li>
-                            <a href="#">Prototype</a>
+                            <a href="#">4</a>
                         </li>
                     </ul>
                 </nav>
