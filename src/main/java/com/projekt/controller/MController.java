@@ -9,16 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- *
- * @author Damiann
- * chyba ja - Konrad
- * ja tez Marcin
- * zbychu obecny
- * damian tez
- * a on nie :<
- */
-
 @Controller
 public class MController {
     private ModelAndView model;
