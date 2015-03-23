@@ -23,7 +23,7 @@ public class MController {
     @RequestMapping("/home")
     public ModelAndView home(){
         model = new ModelAndView("home");
-        //lalallalalalalalalal zbychu
+        //lalallalalalalalalal zbychu komment
         return model;
     }
 }
