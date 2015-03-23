@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @author Damiann
  * chyba ja - Konrad
  * ja tez Marcin
+ * zbychu obecny
  */
 
 @Controller
@@ -23,7 +24,6 @@ public class MController {
     @RequestMapping("/home")
     public ModelAndView home(){
         model = new ModelAndView("home");
-        //lalallalalalalalalal zbychu komment
         return model;
     }
 }
