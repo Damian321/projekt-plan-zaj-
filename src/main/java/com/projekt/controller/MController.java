@@ -21,7 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MController {
     private ModelAndView model;
-    
+    //to ja moze tutaj
     @RequestMapping("/home")
     public ModelAndView home(){
         model = new ModelAndView("home");
