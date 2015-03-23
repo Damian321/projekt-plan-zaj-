@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  *
  * @author Damiann
- * chyba ja
+ * chyba ja - Konrad
  */
 
 @Controller
