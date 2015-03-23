@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
  * ja tez Marcin
  * zbychu obecny
  * damian tez
+ * a on nie :<
  */
 
 @Controller
