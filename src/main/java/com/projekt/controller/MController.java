@@ -23,8 +23,12 @@ public class MController {
     @RequestMapping("/home")
     public ModelAndView home(){
         model = new ModelAndView("home");
-        
-        
+        // Zbyszek tu jest kurwa mac !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+        // Zbyszek tu jest kurwa mac !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+        // Zbyszek tu jest kurwa mac !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+        // Zbyszek tu jest kurwa mac !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+        // Zbyszek tu jest kurwa mac !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+        // Zbyszek tu jest kurwa mac !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
         return model;
     }
 }
