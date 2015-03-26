@@ -1,11 +1,10 @@
-<%-- 
-    Document   : header
-    Created on : 2015-03-23, 21:14:58
-    Author     : krych4
---%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -14,9 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="config/css/bootstrap.min.css" rel="stylesheet">
         <link href="config/css/styles.css" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     </head>
     <body>
-
         <div id="header" class="navbar navbar-default navbar-fixed-top">
             <div class="navbar-header">
                 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -67,9 +66,4 @@
                     </ul>
                 </div>
             </div>
-
-        </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="config/js/bootstrap.min.js"></script>
     </body>
-</html>
