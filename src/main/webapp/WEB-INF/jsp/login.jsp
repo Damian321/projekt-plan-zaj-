@@ -10,7 +10,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button onclick="location.href='home.htm'" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    
                     <h1 class="text-center">Strona Logowania</h1>
                 </div>
                 <div class="modal-body">
@@ -27,10 +28,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <div class="col-md-12">
-                        <button onclick="location.href='home.htm'" class="btn" data-dismiss="modal" aria-hidden="true">Anuluj</button>
-                    </div>	
+                <div class="modal-footer">	
                 </div>
             </div>
         </div>
