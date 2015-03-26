@@ -29,7 +29,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="col-md-12">
-                        <button class="btn" data-dismiss="modal" aria-hidden="true">Anuluj</button>
+                        <button onclick="location.href='home.htm'" class="btn" data-dismiss="modal" aria-hidden="true">Anuluj</button>
                     </div>	
                 </div>
             </div>
