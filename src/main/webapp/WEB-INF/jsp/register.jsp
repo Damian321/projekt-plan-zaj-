@@ -29,15 +29,13 @@
                     <input type="submit" name="submit" id="submit" value="Zatwierd¼" class="btn btn-info pull-right">
                 </div>
             </form>
-            <div class="col-lg-5 col-md-push-1">
-                <div class="col-md-12">
+            <div id="main-wrapper" class="col-md-11 pull-left">
                     <div class="alert alert-success">
-                        <strong><span class="glyphicon glyphicon-ok"></span> Sukces</strong>
+                        <strong><span class="glyphicon glyphicon-ok"></span>Sukces</strong>
                     </div>
                     <div class="alert alert-danger">
-                        <span class="glyphicon glyphicon-remove"></span><strong> B³±d!</strong>
+                        <span class="glyphicon glyphicon-remove"></span><strong>B³±d!</strong>
                     </div>
-                </div>
             </div>
     </div>
     <jsp:include page="footer.jsp"/>
