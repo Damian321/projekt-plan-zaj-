@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <jsp:include page="header.jsp"/>
+<jsp:include page="header.jsp"/>
     <body>
         <div id="main-wrapper" class="col-md-11 pull-right">
             <div id="main">
@@ -37,4 +35,3 @@
     </div>
     <jsp:include page="footer.jsp"/>
 </body>
-</html>
