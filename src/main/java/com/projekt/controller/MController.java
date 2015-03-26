@@ -12,10 +12,19 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MController {
     private ModelAndView model;
-    //to ja moze tutaj
     @RequestMapping("/home")
     public ModelAndView home(){
         model = new ModelAndView("home");
+        return model;
+    }
+    @RequestMapping("/login")
+    public ModelAndView login(){
+        model = new ModelAndView("login");
+        return model;
+    }
+    @RequestMapping("/register")
+    public ModelAndView register(){
+        model = new ModelAndView("register");
         return model;
     }
 }
