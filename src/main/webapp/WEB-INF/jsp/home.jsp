@@ -1,5 +1,4 @@
 <jsp:include page="header.jsp"/>
-    <body>
         <div id="main-wrapper" class="col-md-11 pull-right">
             <div id="main">
                 <div class="page-header">
@@ -34,4 +33,3 @@
         </div>
     </div>
     <jsp:include page="footer.jsp"/>
-</body>

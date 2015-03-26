@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-2"
+         pageEncoding="ISO-8859-2"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="config/css/bootstrap.min.css" rel="stylesheet">
         <link href="config/css/styles.css" rel="stylesheet">
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
     </head>
     <body>
         <div id="header" class="navbar navbar-default navbar-fixed-top">
@@ -55,15 +55,26 @@
                 <div id="sidebar">
                     <ul class="nav list-group">
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 1</a>
+                            <a class="list-group-item" href="home.htm"><i class="icon-home icon-1x"></i>Pocz±tek</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 2</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia stacjonarne</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Sidebar Item 3</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia niestacjonarne</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Rozk³ad zajêæ nauczycieli</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Zajeto¶æ sal</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Znajd¼ wolne sale</a>
+                        </li>
+                        <li>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Terminy konsultacji</a>
                         </li>
                     </ul>
                 </div>
             </div>
-    </body>
