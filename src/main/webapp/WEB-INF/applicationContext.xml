@@ -21,5 +21,11 @@
     p:password="${jdbc.password}" /-->
 
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
-
+    <bean id="dataSource" 
+      class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+      <property name="driverClassName" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="url" value="jdbc:derby://localhost:1527/projekt"/>
+      <property name="username" value="sa"/>
+      <property name="password" value="sa"/>
+   </bean>
 </beans>
