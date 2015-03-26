@@ -16,6 +16,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
     </head>
     <body>
+        <script>
+            function formSubmit() {
+                document.getElementById("logoutForm").submit();
+            }
+        </script>
+        <c:url value="/j_spring_security_logout" var="logoutUrl" />
+
+        <!-- csrt for log out-->
+        <form action="${logoutUrl}" method="post" id="logoutForm">
+            <input type="hidden" 
+                   name="${_csrf.parameterName}"
+                   value="${_csrf.token}" />
+        </form>
+
         <div id="header" class="navbar navbar-default navbar-fixed-top">
             <div class="navbar-header">
                 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,11 +42,11 @@
             <nav class="collapse navbar-collapse">
                 <ul class="nav navbar-nav pull-right">
                     <li class="dropdown">
-                        <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>Username<i class="icon-sort-down"></i></a>
+                        <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>${pageContext.request.userPrincipal.name}<i class="icon-sort-down"></i></a>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="login.htm">Zaloguj się</a></li>
-                            <li><a href="register.htm">Zarejestruj się</a></li>
-                            <li><a href="#">Wyloguj sie</a></li>
+                            <li><a href="login.htm">Zaloguj si?</a></li>
+                            <li><a href="register.htm">Zarejestruj si?</a></li>
+                            <li><a href="javascript:formSubmit()">Wyloguj sie</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -43,7 +57,7 @@
                 <div id="sidebar">
                     <ul class="nav list-group">
                         <li>
-                            <a class="list-group-item" href="home.htm"><i class="icon-home icon-1x"></i>Początek</a>
+                            <a class="list-group-item" href="home.htm"><i class="icon-home icon-1x"></i>Pocz?tek</a>
                         </li>
                         <li>
                             <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia stacjonarne</a>
@@ -52,13 +66,13 @@
                             <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia niestacjonarne</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Rozkład zajęć nauczycieli</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Rozk?ad zaj?? nauczycieli</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Zajetość sal</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Zajeto?? sal</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Znajdź wolne sale</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Znajd? wolne sale</a>
                         </li>
                         <li>
                             <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Terminy konsultacji</a>

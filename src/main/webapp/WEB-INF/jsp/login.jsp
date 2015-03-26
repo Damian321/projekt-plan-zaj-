@@ -3,6 +3,7 @@
     Created on : 2015-03-26, 21:24:00
     Author     : krych4
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-2" pageEncoding="ISO-8859-2"%>
 <jsp:include page="header.jsp"/>
 <body>
@@ -15,15 +16,16 @@
                     <h1 class="text-center">Strona Logowania</h1>
                 </div>
                 <div class="modal-body">
-                    <form class="form col-md-12 center-block">
+                    <form class="form col-md-12 center-block" role="form" method="POST" action="<c:url value='j_spring_security_check' />">
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg" placeholder="Email">
+                            <input type="text" class="form-control input-lg" placeholder="Email"  name="username" >
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control input-lg" placeholder="Has³o">
+                            <input type="password" class="form-control input-lg" placeholder="Has³o"  name="password" >
                         </div>
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
                         <div class="form-group">
-                            <button class="btn btn-primary btn-lg btn-block">Zaloguj</button>
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Zaloguj</button>
                             <span class="pull-right"><a href="register.htm">Rejestracja</a></span>
                         </div>
                     </form>
