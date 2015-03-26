@@ -44,9 +44,9 @@
                     <li class="dropdown">
                         <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>${pageContext.request.userPrincipal.name}<i class="icon-sort-down"></i></a>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="login.htm">Zaloguj si?</a></li>
-                            <li><a href="register.htm">Zarejestruj si?</a></li>
-                            <li><a href="javascript:formSubmit()">Wyloguj sie</a></li>
+                            <li><a href="login.htm">Zaloguj siê</a></li>
+                            <li><a href="register.htm">Zarejestruj siê</a></li>
+                            <li><a href="javascript:formSubmit()">Wyloguj siê</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -57,7 +57,7 @@
                 <div id="sidebar">
                     <ul class="nav list-group">
                         <li>
-                            <a class="list-group-item" href="home.htm"><i class="icon-home icon-1x"></i>Pocz?tek</a>
+                            <a class="list-group-item" href="home.htm"><i class="icon-home icon-1x"></i>Pocz±tek</a>
                         </li>
                         <li>
                             <a class="list-group-item" href="studiaS.htm"><i class="icon-home icon-1x"></i>Studia stacjonarne</a>
@@ -66,13 +66,13 @@
                             <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia niestacjonarne</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Rozk?ad zaj?? nauczycieli</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Rozk³ad zajêæ nauczycieli</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Zajeto?? sal</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Zajêto¶æ sal</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Znajd? wolne sale</a>
+                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Znajd¼ wolne sale</a>
                         </li>
                         <li>
                             <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Terminy konsultacji</a>
