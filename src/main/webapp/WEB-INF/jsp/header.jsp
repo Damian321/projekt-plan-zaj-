@@ -46,7 +46,7 @@
                             <a class="list-group-item" href="home.htm"><i class="icon-home icon-1x"></i>Pocz±tek</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia stacjonarne</a>
+                            <a class="list-group-item" href="studiaS.htm"><i class="icon-home icon-1x"></i>Studia stacjonarne</a>
                         </li>
                         <li>
                             <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia niestacjonarne</a>

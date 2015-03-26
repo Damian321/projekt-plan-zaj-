@@ -27,4 +27,9 @@ public class MController {
         model = new ModelAndView("register");
         return model;
     }
+    @RequestMapping("/studiaS")
+    public ModelAndView studiaS(){
+        model = new ModelAndView("studiaS");
+        return model;
+    }
 }
