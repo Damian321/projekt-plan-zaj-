@@ -32,4 +32,9 @@ public class MController {
         model = new ModelAndView("studiaS");
         return model;
     }
+    @RequestMapping("/profile")
+    public ModelAndView profile(){
+        model = new ModelAndView("profile");
+        return model;
+    }
 }
