@@ -42,7 +42,10 @@
             <nav class="collapse navbar-collapse">
                 <ul class="nav navbar-nav pull-right">
                     <li class="dropdown">
-                        <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>${pageContext.request.userPrincipal.name}<i class="icon-sort-down"></i></a>
+                        <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>                        <c:choose>
+                                <c:when test="${pageContext.request.userPrincipal.authenticated}">${pageContext.request.userPrincipal.name}</c:when>
+                                <c:otherwise>Go¶æ</c:otherwise>
+                            </c:choose><i class="icon-sort-down"></i></a>
                         <ul class="dropdown-menu pull-right">
                             <li><a href="login.htm">Zaloguj siê</a></li>
                             <li><a href="register.htm">Zarejestruj siê</a></li>
