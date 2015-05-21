@@ -1,4 +1,6 @@
-<jsp:include page="../header.jsp"/>
+<c:set var="root" value="${pageContext.request.contextPath}" />
+
+<jsp:include page="${root}/header.jsp"/>
         <div id="main-wrapper" class="col-md-11 pull-right">
             <div id="main">
                 <div class="page-header">
@@ -8,4 +10,4 @@
             </div>
         </div>
     </div>
-<jsp:include page="../footer.jsp"/>
+<jsp:include page="${root}/footer.jsp"/>
