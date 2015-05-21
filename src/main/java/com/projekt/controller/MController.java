@@ -11,29 +11,35 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MController {
+
     private ModelAndView model;
+
     @RequestMapping("/home")
-    public ModelAndView home(){
+    public ModelAndView home() {
         model = new ModelAndView("home");
         return model;
     }
+
     @RequestMapping("/login")
-    public ModelAndView login(){
+    public ModelAndView login() {
         model = new ModelAndView("login");
         return model;
     }
+
     @RequestMapping("/register")
-    public ModelAndView register(){
+    public ModelAndView register() {
         model = new ModelAndView("register");
         return model;
     }
+
     @RequestMapping("/studiaS")
-    public ModelAndView studiaS(){
+    public ModelAndView studiaS() {
         model = new ModelAndView("studiaS");
         return model;
     }
+
     @RequestMapping("/profile")
-    public ModelAndView profile(){
+    public ModelAndView profile() {
         model = new ModelAndView("profile");
         return model;
     }
