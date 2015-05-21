@@ -15,7 +15,8 @@ public class AdminController {
     
     private ModelAndView model;
     @RequestMapping("panel.htm")
-    model = new ModelAndView("admin/panel"); 
-    
-    
+    public ModelAndView login() {
+        model = new ModelAndView("admin/panel");
+        return model;
+    }
 }
