@@ -12,8 +12,8 @@
         <meta charset="utf-8">
         <title>Degra V2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="${root}/config/css/bootstrap.min.css" rel="stylesheet">
-        <link href="${root}/config/css/styles.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/config/css/bootstrap.min.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/config/css/styles.css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
     </head>
     <body>
