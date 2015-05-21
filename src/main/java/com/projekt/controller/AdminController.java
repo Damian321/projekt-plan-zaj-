@@ -6,6 +6,8 @@
 package com.projekt.controller;
 
 import com.projekt.dao.UserDAO;
+import javax.annotation.PostConstruct;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,6 +18,20 @@ public class AdminController {
     
     private ModelAndView model;
     private UserDAO userDAO;
+    private DriverManagerDataSource dataSource;
+    
+    @PostConstruct
+    public void init() {
+        dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
+        dataSource.setUrl("jdbc:derby://localhost:1527/projekt");
+        dataSource.setUsername("sa");
+        dataSource.setPassword("sa");
+      
+        userDAO = new UserDAO();
+                
+        userDAO.setDataSource(dataSource);
+    }
     
     @RequestMapping("panel")
     public ModelAndView login() {

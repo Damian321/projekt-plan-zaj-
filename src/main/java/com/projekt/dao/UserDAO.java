@@ -49,7 +49,7 @@ public class UserDAO {
     }
     
     public List<User> findAllUsers(){
-        query = "select u.username, u.password, u.enabled from users u, authorities a where u.USERNAME = a.USERNAME and a.AUTHORITY='ROLE_USER'";
+        query = "select u.username, u.password, u.enabled from users u, authorities a where u.USERNAME = a.USERNAME";
         
         return jdbcTemplate.query(query, new UserMapper());
     }
