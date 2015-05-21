@@ -5,6 +5,7 @@
  */
 package com.projekt.controller;
 
+import com.projekt.dao.UserDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,9 +15,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class AdminController {
     
     private ModelAndView model;
+    private UserDAO userDAO;
+    
     @RequestMapping("panel")
     public ModelAndView login() {
         model = new ModelAndView("admin/panel");
+        
+        model.addObject("lista_uzytkownikow", userDAO.findAllUsers());
         return model;
     }
 }
