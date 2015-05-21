@@ -1,4 +1,5 @@
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="config/js/bootstrap.min.js"></script>
+<c:set var="root" value="${pageContext.request.contextPath}" />        
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="${root}/config/js/bootstrap.min.js"></script>
     </body>
 </html>

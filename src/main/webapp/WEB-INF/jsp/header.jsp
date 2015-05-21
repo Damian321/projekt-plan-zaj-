@@ -4,6 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<c:set var="root" value="${pageContext.request.contextPath}" />
 
 <html>
     <head>
@@ -11,8 +12,8 @@
         <meta charset="utf-8">
         <title>Degra V2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="config/css/bootstrap.min.css" rel="stylesheet">
-        <link href="config/css/styles.css" rel="stylesheet">
+        <link href="${root}/config/css/bootstrap.min.css" rel="stylesheet">
+        <link href="${root}/config/css/styles.css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
     </head>
     <body>
@@ -35,12 +36,17 @@
                 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                     <i class="icon-reorder"></i>
                 </button>
-                <a class="navbar-brand" href="home.htm">
+                <a class="navbar-brand" href="${pageContext.request.contextPath}/home.htm">
                     degraV2
                 </a>
             </div>
             <nav class="collapse navbar-collapse">
                 <ul class="nav navbar-nav pull-right">
+                    <c:if test="${pageContext.request.userPrincipal.authorities == '[ROLE_ADMIN]'}">
+                    <li>
+                        <a href="${root}/admin/panel.htm">Panel Admina</a>
+                    </li>
+                    </c:if>
                     <li class="dropdown">
                         <a href="#" id="nbAcctDD" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>                        <c:choose>
                                 <c:when test="${pageContext.request.userPrincipal.authenticated}">${pageContext.request.userPrincipal.name}</c:when>
@@ -60,10 +66,10 @@
                 <div id="sidebar">
                     <ul class="nav list-group">
                         <li>
-                            <a class="list-group-item" href="home.htm"><i class="icon-home icon-1x"></i>Pocz±tek</a>
+                            <a class="list-group-item" href="${root}/home.htm"><i class="icon-home icon-1x"></i>Pocz±tek</a>
                         </li>
                         <li>
-                            <a class="list-group-item" href="studiaS.htm"><i class="icon-home icon-1x"></i>Studia stacjonarne</a>
+                            <a class="list-group-item" href="${root}/studiaS.htm"><i class="icon-home icon-1x"></i>Studia stacjonarne</a>
                         </li>
                         <li>
                             <a class="list-group-item" href="#"><i class="icon-home icon-1x"></i>Studia niestacjonarne</a>
